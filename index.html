@@ -6,6 +6,17 @@
     <title>Readly</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
+        .rating-star {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-top: 4px;
+        width: 16px;
+        height: 16px;}
+
+        .no-scrollbar::-webkit-scrollbar {
+        display: none;} 
+  
       @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Caslon+Display&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
     </style>
@@ -126,8 +137,232 @@
     </header>
     <hr class="border-[#68483d] border-1" />
     <main>
-      <section class="h-[500px] bg-[#ECE0DC]" classname="hero-banner">
-        <!--Ploy-->
+      <section class="h-[500px] pl-[100px] py-[40px] bg-[#ECE0DC] font-['Cormorant_Garamond']  flex flex-row " classname="hero-banner">
+            <div class="w-[240px] mr-[48px] [text-wrap:pretty]">
+                  <h1 class="font-extrabold text-6xl">Trending <br> Books</h1>
+                  <p class="mt-2 text-2xl font-semibold">Let's discover your new favorite books !</p>
+            </div>
+
+            <div class="relative w-full max-w-full justify-center pl-[48px] pr-[32px] pb-[32px] pt-[48px] bg-[#faf4ef] rounded-[90px]
+                    overflow-x-auto scroll-smooth no-scrollbar">
+
+                  <button 
+                        class="absolute left-10 top-1/2 -translate-y-1/2 z-10 
+                        text-7xl font-extrabold transform scale-y-200 text-[#878584] hover:text-black transition">
+                        &lt;
+                  </button>
+
+                  <button 
+                        class="absolute right-10 top-1/2 -translate-y-1/2 z-10 
+                        text-7xl font-extrabold transform scale-y-200 text-[#878584] hover:text-black transition">
+                        &gt;
+                  </button>
+
+                  <div class="flex flex-row gap-[72px] justify-center">
+                            
+                            <!--Section hero's book-->
+                            <div class="w-[160px] h-[240px] m-[8px]">
+                                    <img
+                                          class="object-cover object-center w-full h-full max-w-full 
+                                          transition duration-300 hover:-translate-y-4 hover:shadow-4xl shadow-[0_10px_20px_rgba(0,0,0,0.5)]  hover:scale-108"
+                                          src="./hero-section-image/hero-book-01.jpg"
+                                          alt="Project Hail Mary"/>
+                                    <div class="my-[16px] h-[100px] w-[300px]">
+                                          <a href="https://www.amazon.com/Project-Hail-Mary-Andy-Weir/dp/0593135229/ref=tmm_pap_swatch_0" 
+                                            class="font-extrabold text-2xl py-[8px] hover:underline"
+                                            >Project Hail Mary</a>
+                                          <div class="flex flex-row gap-2 items-center">
+                                                  <p class="text-xl">4.7</p>
+                                                  <img
+                                                    class="rating-star"
+                                                    src="./hero-section-image/star.png"
+                                                    alt="star"/>
+                                                  <img
+                                                    class="rating-star"
+                                                    src="./hero-section-image/star.png"
+                                                    alt="star"/>
+                                                  <img
+                                                    class="rating-star"
+                                                    src="./hero-section-image/star.png"
+                                                    alt="star"/>
+                                                  <img
+                                                    class="rating-star"
+                                                    src="./hero-section-image/star.png"
+                                                    alt="star"/>
+                                                  <img
+                                                    class="rating-star"
+                                                    src="./hero-section-image/half-star.png"
+                                                    alt="half-star"/>
+                                          </div>
+                                          <p class="font-bold text-2xl">434.15 THB</p>
+                                      
+                                    </div>
+                            </div>
+
+                            <div class="w-[160px] h-[240px] m-[8px]">
+                                    <img
+                                          class="object-cover object-center w-full h-full max-w-full 
+                                          transition duration-300 hover:-translate-y-4 hover:shadow-4xl shadow-[0_10px_20px_rgba(0,0,0,0.5)] hover:scale-108"
+                                          src="./hero-section-image/hero-book-02.jpg"
+                                          alt="The Nightingale"/>
+                                    <div class="my-[16px] h-[100px] w-[300px]">
+                                          <a href="https://www.amazon.com/Nightingale-Novel-Kristin-Hannah/dp/1250080401/ref=lp_17143709011_1_11?pf_rd_p=53d84f87-8073-4df1-9740-1bf3fa798149&pf_rd_r=30CKXBBT73395563YT23&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D" 
+                                            class="font-extrabold text-2xl hover:underline"
+                                            >The Nightingale</a>
+                                          <div class="flex flex-row gap-2 items-center">
+                                                <p class="text-xl">4.8</p>
+                                                <img
+                                                  class="rating-star"
+                                                  src="./hero-section-image/star.png"
+                                                  alt="star"/>
+                                                <img
+                                                  class="rating-star"
+                                                  src="./hero-section-image/star.png"
+                                                  alt="star"/>
+                                                <img
+                                                  class="rating-star"
+                                                  src="./hero-section-image/star.png"
+                                                  alt="star"/>
+                                                <img
+                                                  class="rating-star"
+                                                  src="./hero-section-image/star.png"
+                                                  alt="star"/>
+                                                <img
+                                                  class="rating-star"
+                                                  src="./hero-section-image/half-star.png"
+                                                  alt="half-star"/>
+                                          </div>
+                                          <p class="font-bold text-2xl">391.98 THB</p>
+                                    </div>
+                              
+                            </div>
+
+                            <div class="w-[160px] h-[240px] m-[8px]">
+                                    <img
+                                      class="object-cover object-center w-full h-full max-w-full 
+                                      transition duration-300 hover:-translate-y-4 hover:shadow-4xl shadow-[0_10px_20px_rgba(0,0,0,0.5)] hover:scale-108"
+                                      src="./hero-section-image/hero-book-03.jpg"
+                                      alt="The Housemaid"/>
+                                    <div class="my-[16px] h-[100px] w-[300px]">
+                                        <a href="https://www.amazon.com/Housemaid-Freida-McFadden/dp/1538742578/ref=lp_17143709011_1_5?pf_rd_p=53d84f87-8073-4df1-9740-1bf3fa798149&pf_rd_r=66VAW53NF657MHYVAFZG&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D" 
+                                          class="font-extrabold text-2xl hover:underline"
+                                          >The Housemaid</a>
+                                        <div class="flex flex-row gap-2 items-center">
+                                                <p class="text-xl">4.5</p>
+                                                <img
+                                                  class="rating-star"
+                                                  src="./hero-section-image/star.png"
+                                                  alt="star"/>
+                                                <img
+                                                  class="rating-star"
+                                                  src="./hero-section-image/star.png"
+                                                  alt="star"/>
+                                                <img
+                                                  class="rating-star"
+                                                  src="./hero-section-image/star.png"
+                                                  alt="star"/>
+                                                <img
+                                                  class="rating-star"
+                                                  src="./hero-section-image/star.png"
+                                                  alt="star"/>
+                                                <img
+                                                  class="rating-star"
+                                                  src="./hero-section-image/half-star.png"
+                                                  alt="half-star"/>
+                                        </div>
+                                        <p class="font-bold text-2xl">391.98 THB</p>                           
+                                    </div>
+                            </div>
+                            <!--hide book
+                            <div class="w-[160px] h-[240px] m-[8px]">
+                                  <img
+                                    "object-cover object-center w-full h-full max-w-full 
+                                    transition duration-300 hover:-translate-y-4 hover:shadow-4xl shadow-[0_10px_20px_rgba(0,0,0,0.5)] hover:scale-108"
+                                    src="./hero-section-image/hero-book-04.jpg"
+                                    alt="The Housemaid"/>
+                                  <div class="my-[16px] h-[100px] w-[300px]">
+                                <a href="https://www.amazon.com/Housemaids-Secret-gripping-psychological-thriller-ebook/dp/B0BGXYL3BZ?ref_=saga_dp_bnx_dsk_dp&qid=1775201835&sr=1-5" 
+                                  class="font-extrabold text-2xl hover:underline"
+                                  >The Housemaid's Secret</a>
+                                <div class="flex flex-row gap-2 items-center">
+                                  <p class="text-xl">4.4</p>
+                                  <img
+                                    class="rating-star"
+                                    src="./hero-section-image/star.png"
+                                    alt="star"/>
+                                  <img
+                                    class="rating-star"
+                                    src="./hero-section-image/star.png"
+                                    alt="star"/>
+                                  <img
+                                    class="rating-star"
+                                    src="./hero-section-image/star.png"
+                                    alt="star"/>
+                                  <img
+                                    class="rating-star"
+                                    src="./hero-section-image/star.png"
+                                    alt="star"/>
+                                  <img
+                                    class="rating-star"
+                                    src="./hero-section-image/half-star.png"
+                                    alt="half-star"/>
+                                </div>
+                                <p class="font-bold text-2xl">261.61 THB</p>
+                                
+                              </div>
+                              
+                            </div>
+
+                            <div class="w-[160px] h-[240px] m-[8px]">
+                                  <img
+                                    "object-cover object-center w-full h-full max-w-full 
+                                    transition duration-300 hover:-translate-y-4 hover:shadow-4xl shadow-[0_10px_20px_rgba(0,0,0,0.5)] hover:scale-108"
+                                    src="./hero-section-image/hero-book-05.jpg"
+                                    alt="The Housemaid"/>
+                                  <div class="my-[16px] h-[100px] w-[300px]">
+                                <a href="https://www.amazon.com/Let-Them-Theory-Life-Changing-Millions/dp/1401971369/ref=lp_17143709011_1_2?pf_rd_p=53d84f87-8073-4df1-9740-1bf3fa798149&pf_rd_r=66VAW53NF657MHYVAFZG&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D" 
+                                  class="font-extrabold text-2xl hover:underline"
+                                  >The Let Them Theory</a>
+                                <div class="flex flex-row gap-2 items-center">
+                                  <p class="text-xl">4.6</p>
+                                  <img
+                                    class="rating-star"
+                                    src="./hero-section-image/star.png"
+                                    alt="star"/>
+                                  <img
+                                    class="rating-star"
+                                    src="./hero-section-image/star.png"
+                                    alt="star"/>
+                                  <img
+                                    class="rating-star"
+                                    src="./hero-section-image/star.png"
+                                    alt="star"/>
+                                  <img
+                                    class="rating-star"
+                                    src="./hero-section-image/star.png"
+                                    alt="star"/>
+                                  <img
+                                    class="rating-star"
+                                    src="./hero-section-image/half-star.png"
+                                    alt="half-star"/>
+                                </div>
+                                <p class="font-bold text-2xl">505.75 THB</p>
+                                
+                              </div>
+                              
+                            </div>
+                            -->
+                          <!--section hero's book--> 
+                  </div>
+            </div>
+
+            <button class="transition hover:scale-102 px-[32px] pb-[400px] justify-center cursor-pointer">
+                <img
+                   class="w-10"
+                   src="./hero-section-image/filter.png"
+                   alt="filter"/>
+                
+            </button>
       </section>
 
       <section class="h-[500px] bg-white" classname="today-deal">
