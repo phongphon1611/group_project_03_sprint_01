@@ -389,10 +389,85 @@
                 
             </button>
       </section>
-
-      <section class="h-[500px] bg-white" classname="today-deal">
+<!-- ================================================================================= -->
+ 
         <!--Chong-->
-      </section>
+         
+        <section class="today-deal m-0 box-border h-auto bg-white flex flex-col gap-[0.5rem]">
+        <!-- container หลักของ carousel -->
+        <!-- relative = ใช้เป็น reference สำหรับ element ลูกที่เป็น absolute -->
+        <!-- w-full = กว้างเต็ม -->
+        <!-- overflow-hidden = ซ่อนส่วนที่เลื่อนออกนอกกรอบ -->
+        <!-- bg-gray-100 = พื้นหลังสีเทา -->
+        <!-- py-10 = padding บนล่าง 2.5rem -->
+        <div class="relative w-full overflow-hidden bg-[#ECEAE9] py-10">
+          
+          <!-- flex = layout แนวนอน -->
+          <!-- w-[max-content] = ความกว้างเท่ากับ content จริง -->
+          <!-- animate-scroll = class ที่สร้าง animation เลื่อน -->
+          <div class="flex w-[max-content] animate-scroll">
+            
+            <!-- กลุ่ม banner ชุดที่ 1 -->
+            <!-- flex = เรียงแนวนอน -->
+            <!-- gap-6 = ช่องว่างระหว่าง item -->
+            <!-- px-3 = padding ซ้ายขวา -->
+            <div class="flex gap-6 px-3">
+              
+              <!-- card banner -->
+              <!-- w-[600px] = กว้าง 600px -->
+              <!-- shrink-0 = ห้าม flex บีบให้เล็กลง -->
+              <!-- bg-white = พื้นหลังสีขาว -->
+              <!-- rounded-3xl = มุมโค้ง -->
+              <!-- shadow-xl = เงาขนาดใหญ่ -->
+              <!-- overflow-hidden = ซ่อนส่วนเกิน -->
+              <!-- border-t-8 = border ด้านบนหนา -->
+              <div class="w-[600px] shrink-0 bg-white rounded-3xl shadow-xl overflow-hidden border-t-8 ">
+
+                <!-- รูปภาพ -->
+                <!-- w-full = กว้างเต็ม container -->
+                <!-- h-auto = ความสูงตามสัดส่วน -->
+                <!-- object-cover = crop รูปให้เต็มพื้นที่ -->
+                <img src="today-deal-image/today-deal-banner-02.svg" class="w-full h-auto object-cover">
+              </div>
+
+              <!-- banner card -->
+              <div class="w-[600px] shrink-0 bg-white rounded-3xl shadow-xl overflow-hidden border-t-8">
+                <img src="today-deal-image/today-deal-banner-03.svg" class="w-full h-auto object-cover">
+              </div>
+
+              <!-- banner card -->
+              <div class="w-[600px] shrink-0 bg-white rounded-3xl shadow-xl overflow-hidden border-t-8 ">
+                <img src="today-deal-image/today-deal-banner-04.svg" class="w-full h-auto object-cover">
+              </div>
+
+            </div>
+
+            <!-- กลุ่ม banner ชุดที่ 2 -->
+            <!-- ทำซ้ำเพื่อให้ scroll loop แบบ seamless -->
+            <!-- aria-hidden="true" = บอก screen reader ว่าไม่ต้องอ่าน -->
+            <div class="flex gap-6 px-3" aria-hidden="true"> 
+
+              <div class="w-[600px] shrink-0 bg-white rounded-3xl shadow-xl overflow-hidden border-t-8 ">
+                <img src="today-deal-image/today-deal-banner-02.svg" class="w-full h-auto object-cover">
+              </div>
+
+              <div class="w-[600px] shrink-0 bg-white rounded-3xl shadow-xl overflow-hidden border-t-8 ">
+                <img src="today-deal-image/today-deal-banner-03.svg" class="w-full h-auto object-cover">
+              </div>
+
+              <div class="w-[600px] shrink-0 bg-white rounded-3xl shadow-xl overflow-hidden border-t-8 ">
+                <img src="today-deal-image/today-deal-banner-04.svg" class="w-full h-auto object-cover">
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+  </div>
+</div>
+</section>
+<!-- ================================================================================= -->
 
       <section class="h-auto bg-[#ECE0DC] px-4 py-4" classname="category">
         <!--Jay & Em-->
@@ -582,93 +657,6 @@
         </div>
       </section>
 
-        <section class="h-[500px] bg-[#ECE0DC]" classname="hero-banner">
-            <!--Ploy-->
-
-        </section>
-<!-- ================================================================================= -->
- 
-        <!--Chong-->
-         
-        <section class="today-deal m-0 box-border h-auto bg-white flex flex-col gap-[0.5rem]">
-        <!-- container หลักของ carousel -->
-        <!-- relative = ใช้เป็น reference สำหรับ element ลูกที่เป็น absolute -->
-        <!-- w-full = กว้างเต็ม -->
-        <!-- overflow-hidden = ซ่อนส่วนที่เลื่อนออกนอกกรอบ -->
-        <!-- bg-gray-100 = พื้นหลังสีเทา -->
-        <!-- py-10 = padding บนล่าง 2.5rem -->
-        <div class="relative w-full overflow-hidden bg-[#ECEAE9] py-10">
-          
-          <!-- flex = layout แนวนอน -->
-          <!-- w-[max-content] = ความกว้างเท่ากับ content จริง -->
-          <!-- animate-scroll = class ที่สร้าง animation เลื่อน -->
-          <div class="flex w-[max-content] animate-scroll">
-            
-            <!-- กลุ่ม banner ชุดที่ 1 -->
-            <!-- flex = เรียงแนวนอน -->
-            <!-- gap-6 = ช่องว่างระหว่าง item -->
-            <!-- px-3 = padding ซ้ายขวา -->
-            <div class="flex gap-6 px-3">
-              
-              <!-- card banner -->
-              <!-- w-[600px] = กว้าง 600px -->
-              <!-- shrink-0 = ห้าม flex บีบให้เล็กลง -->
-              <!-- bg-white = พื้นหลังสีขาว -->
-              <!-- rounded-3xl = มุมโค้ง -->
-              <!-- shadow-xl = เงาขนาดใหญ่ -->
-              <!-- overflow-hidden = ซ่อนส่วนเกิน -->
-              <!-- border-t-8 = border ด้านบนหนา -->
-              <div class="w-[600px] shrink-0 bg-white rounded-3xl shadow-xl overflow-hidden border-t-8 ">
-
-                <!-- รูปภาพ -->
-                <!-- w-full = กว้างเต็ม container -->
-                <!-- h-auto = ความสูงตามสัดส่วน -->
-                <!-- object-cover = crop รูปให้เต็มพื้นที่ -->
-                <img src="today-deal-image/today-deal-banner-02.svg" class="w-full h-auto object-cover">
-              </div>
-
-              <!-- banner card -->
-              <div class="w-[600px] shrink-0 bg-white rounded-3xl shadow-xl overflow-hidden border-t-8">
-                <img src="today-deal-image/today-deal-banner-03.svg" class="w-full h-auto object-cover">
-              </div>
-
-              <!-- banner card -->
-              <div class="w-[600px] shrink-0 bg-white rounded-3xl shadow-xl overflow-hidden border-t-8 ">
-                <img src="today-deal-image/today-deal-banner-04.svg" class="w-full h-auto object-cover">
-              </div>
-
-            </div>
-
-            <!-- กลุ่ม banner ชุดที่ 2 -->
-            <!-- ทำซ้ำเพื่อให้ scroll loop แบบ seamless -->
-            <!-- aria-hidden="true" = บอก screen reader ว่าไม่ต้องอ่าน -->
-            <div class="flex gap-6 px-3" aria-hidden="true"> 
-
-              <div class="w-[600px] shrink-0 bg-white rounded-3xl shadow-xl overflow-hidden border-t-8 ">
-                <img src="today-deal-image/today-deal-banner-02.svg" class="w-full h-auto object-cover">
-              </div>
-
-              <div class="w-[600px] shrink-0 bg-white rounded-3xl shadow-xl overflow-hidden border-t-8 ">
-                <img src="today-deal-image/today-deal-banner-03.svg" class="w-full h-auto object-cover">
-              </div>
-
-              <div class="w-[600px] shrink-0 bg-white rounded-3xl shadow-xl overflow-hidden border-t-8 ">
-                <img src="today-deal-image/today-deal-banner-04.svg" class="w-full h-auto object-cover">
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
-  </div>
-</div>
-</section>
-<!-- ================================================================================= -->
-        <section class="h-[500px] bg-[#ECE0DC]" classname="category">
-            <!--Jay & Em-->
-
-        </section>
 
     </main>
 
